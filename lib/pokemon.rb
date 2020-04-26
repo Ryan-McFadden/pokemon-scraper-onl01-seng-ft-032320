@@ -27,7 +27,8 @@ class Pokemon
       
     pokemon = db.execute(sql, id)
     
-    
+    new_pokemon = self.new(pokemon)
+    new_pokemon.id = 
   end
   
 end
