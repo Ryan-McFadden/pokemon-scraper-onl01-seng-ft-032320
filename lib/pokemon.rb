@@ -26,7 +26,7 @@ class Pokemon
       SQL
     
     db.execute(sql, id).collect do |row|
-      self.new[row]
+      self.new(row)
     end.first
     
   end
