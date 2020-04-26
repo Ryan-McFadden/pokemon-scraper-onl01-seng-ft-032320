@@ -33,7 +33,7 @@ class Pokemon
       type: row [0][2]
     }
     
-    self.new(hash)
+    pokemon = self.new(hash)
     
   end
   
