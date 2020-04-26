@@ -5,7 +5,6 @@ class Pokemon
     hash.each do |key, value|
       self.send(("#{key}="), value)
     end
-    self.id ||= nil
   end
   
   def self.save(name, type, db)
