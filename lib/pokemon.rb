@@ -25,9 +25,7 @@ class Pokemon
       WHERE id = ?
       SQL
     
-    db.execute(sql, id).collect do |row|
-      self.new(row)
-    end.first
+    db.execute(sql, id)
     
   end
   
